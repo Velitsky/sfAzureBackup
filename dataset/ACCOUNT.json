@@ -1,0 +1,844 @@
+{
+	"name": "ACCOUNT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Salesforce1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SalesforceV2Object",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "id",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "IsDeleted",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "MasterRecordId",
+				"type": "reference",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Name",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LastName",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "FirstName",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Salutation",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Type",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "RecordTypeId",
+				"type": "reference",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ParentId",
+				"type": "reference",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BillingStreet",
+				"type": "textarea",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BillingCity",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BillingState",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BillingPostalCode",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BillingCountry",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BillingLatitude",
+				"type": "double",
+				"precision": 18,
+				"scale": 15
+			},
+			{
+				"name": "BillingLongitude",
+				"type": "double",
+				"precision": 18,
+				"scale": 15
+			},
+			{
+				"name": "BillingGeocodeAccuracy",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ShippingStreet",
+				"type": "textarea",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ShippingCity",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ShippingState",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ShippingPostalCode",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ShippingCountry",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ShippingLatitude",
+				"type": "double",
+				"precision": 18,
+				"scale": 15
+			},
+			{
+				"name": "ShippingLongitude",
+				"type": "double",
+				"precision": 18,
+				"scale": 15
+			},
+			{
+				"name": "ShippingGeocodeAccuracy",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Phone",
+				"type": "phone",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Fax",
+				"type": "phone",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "AccountNumber",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Website",
+				"type": "url",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PhotoUrl",
+				"type": "url",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Industry",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "AnnualRevenue",
+				"type": "currency",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "NumberOfEmployees",
+				"type": "int",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Ownership",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Description",
+				"type": "textarea",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "OwnerId",
+				"type": "reference",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "CreatedDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "CreatedById",
+				"type": "reference",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LastModifiedDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LastModifiedById",
+				"type": "reference",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SystemModstamp",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LastActivityDate",
+				"type": "date",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LastViewedDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LastReferencedDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "IsActive",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "EffectiveDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "EndDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SourceSystemIdentifier",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SourceSystemModifiedDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "IsPartner",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "IsCustomerPortal",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonContactId",
+				"type": "reference",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "IsPersonAccount",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ChannelProgramName",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ChannelProgramLevelName",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonMailingStreet",
+				"type": "textarea",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonMailingCity",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonMailingState",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonMailingPostalCode",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonMailingCountry",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonMailingLatitude",
+				"type": "double",
+				"precision": 18,
+				"scale": 15
+			},
+			{
+				"name": "PersonMailingLongitude",
+				"type": "double",
+				"precision": 18,
+				"scale": 15
+			},
+			{
+				"name": "PersonMailingGeocodeAccuracy",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonOtherStreet",
+				"type": "textarea",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonOtherCity",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonOtherState",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonOtherPostalCode",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonOtherCountry",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonOtherLatitude",
+				"type": "double",
+				"precision": 18,
+				"scale": 15
+			},
+			{
+				"name": "PersonOtherLongitude",
+				"type": "double",
+				"precision": 18,
+				"scale": 15
+			},
+			{
+				"name": "PersonOtherGeocodeAccuracy",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonMobilePhone",
+				"type": "phone",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonHomePhone",
+				"type": "phone",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonOtherPhone",
+				"type": "phone",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonAssistantPhone",
+				"type": "phone",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonEmail",
+				"type": "email",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonTitle",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonDepartment",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonAssistantName",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonLeadSource",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonBirthdate",
+				"type": "date",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonLastCURequestDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonLastCUUpdateDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonEmailBouncedReason",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonEmailBouncedDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonMaritalStatus",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonGender",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonDeceasedDate",
+				"type": "datetime",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonSequenceInMultipleBirth",
+				"type": "int",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PersonPronouns",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Jigsaw",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "JigsawCompanyId",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "AccountSource",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SicDesc",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "OperatingHoursId",
+				"type": "reference",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__Active__c",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__CarePlan__c",
+				"type": "reference",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__Disabled__c",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__EnrollmentType__c",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__IndividualId__c",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__IndividualType__c",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__Institution__c",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__LowIncome__c",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__MedicaidEligibilityStatus__c",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__MedicalRecordNumber__c",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__MedicareEnrollee__c",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__OREC__c",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__PayerType__c",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__PrimaryContact__c",
+				"type": "reference",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__SourceSystemId__c",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__SourceSystem__c",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__TaxId__c",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Unified_Health_Score__c",
+				"type": "double",
+				"precision": 2,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__Age__pc",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__BirthDate__pc",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__ConditionStatus__pc",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__ConvertedReferrals__pc",
+				"type": "double",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__CountryOfBirth__pc",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__CreatedFromLead__pc",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__DeceasedDate__pc",
+				"type": "date",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__Gender__pc",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__IndividualId__pc",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__IndividualType__pc",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__MedicalRecordNumber__pc",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__Monitored_at_Home__pc",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__PreferredName__pc",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__PrimaryLanguage__pc",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__ReferrerScore__pc",
+				"type": "double",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__SecondaryLanguage__pc",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__SourceSystemId__pc",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__SourceSystem__pc",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__StatusGroup__pc",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__Testing_Status__pc",
+				"type": "picklist",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HealthCloudGA__TotalReferrals__pc",
+				"type": "double",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "Address_Text__pc",
+				"type": "string",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Contact_Preferences__pc",
+				"type": "textarea",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Patient_Card_Config_Override__pc",
+				"type": "boolean",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"objectApiName": "Account"
+		}
+	}
+}
