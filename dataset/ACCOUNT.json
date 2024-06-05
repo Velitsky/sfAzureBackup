@@ -838,7 +838,7 @@
 			}
 		],
 		"typeProperties": {
-			"objectApiName": "Account"
+			"objectApiName": "Acc"
 		}
 	}
 }
